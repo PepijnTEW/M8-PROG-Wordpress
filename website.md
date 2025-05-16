@@ -10,11 +10,13 @@ De doelgroep kan verschillen van leeftijd het kunnen mensen zo jong als 16 zijn 
 
 ### Hoe ga ik de functionele eisen verwerken
 
-de feed gaat uit bepaalde recepten bestaan
+- de feed gaat uit bepaalde recepten bestaan
 
-onderaan komt er een contacten formulier te staan
+- onderaan komt er een contacten formulier te staan
 
-voor een custom post type ga ik revieuws toevoegen in de website
+- voor een custom post type ga ik revieuws toevoegen in de website
 
-en voor de stijl ga ik in de stijl van de google websites zoals google docs of photos
+- en voor de stijl ga ik in de stijl van de google websites zoals google docs of photos
+
+###
 
