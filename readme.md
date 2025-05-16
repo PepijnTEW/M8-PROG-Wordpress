@@ -4,10 +4,6 @@
 
 het onderwerp van de website is voor recepten uit de chinese keuken 
 
-### De opdrachtgever
-
-de opdrachtgever is 
-
 ### Doelgroep
 
 De doelgroep kan verschillen van leeftijd het kunnen mensen zo jong als 16 zijn maar ook zo oud als 80 als ze maar iets zoeken hebben met de chinese keuken
@@ -26,4 +22,8 @@ het doel van de website is om mensen naar
 ### Wireframe
 
 ![Wireframe](Wireframe.png)
+
+### Flow Chart
+
+![Flow Chart](Flowchart.png)
 
