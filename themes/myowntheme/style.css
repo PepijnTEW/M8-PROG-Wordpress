@@ -1,17 +1,140 @@
-/**
- * Theme Name:        M8PROG Child theme
- * Theme URI:         https://ma-web.nl
- * Description:       This is a custom child theme
- * Version:           1.0.0
- * Template:          idea-flow
- * Author:            Pepijn
- * Author URI:        https://ma-web.nl
- * Tags:              m8prog
- * Text Domain:       m8prog
- * Domain Path:       /languages
- * Tested up to:      6.4
- * Requires at least: 6.2
- * Requires PHP:      7.4
- * License:           GNU General Public License v2.0 or later
- * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
- */
+/* -----------------------------------------------------------------------------
+   1) General Resets & Variables
+   ----------------------------------------------------------------------------- */
+:root {
+  --bg: #fafafa;
+  --surface: #fff;
+  --text: #202124;
+  --subtext: #5f6368;
+  --accent: rgba(26, 115, 232, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+}
+
+/* -----------------------------------------------------------------------------
+   2) Site-wide Wrap
+   ----------------------------------------------------------------------------- */
+.wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* -----------------------------------------------------------------------------
+   3) Sticky, Rounded Nav Bar
+   ----------------------------------------------------------------------------- */
+.site-nav {
+  position: sticky;
+  top: 0;
+  background: var(--surface);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+.site-nav__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 9999px;
+  background: var(--surface);
+  padding: 0.5rem 1rem;
+}
+
+.site-nav__title a {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.site-nav__menu a {
+  margin-left: 1rem;
+  font-weight: 500;
+  color: var(--text);
+  text-decoration: none;
+  padding: 0.25rem 0.75rem;
+  transition: background 0.2s;
+}
+
+.site-nav__menu a:hover {
+  background: var(--accent);
+  border-radius: 4px;
+}
+
+/* -----------------------------------------------------------------------------
+   4) Section Headings
+   ----------------------------------------------------------------------------- */
+.category-section {
+  margin-top: 2rem;
+}
+
+.category-section h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: var(--text);
+}
+
+/* -----------------------------------------------------------------------------
+   5) Horizontal Scroll-Rows
+   ----------------------------------------------------------------------------- */
+.scroll-row {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+  scrollbar-width: none; /* Firefox */
+}
+
+.scroll-row::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+/* -----------------------------------------------------------------------------
+   6) Recipe Cards
+   ----------------------------------------------------------------------------- */
+.card {
+  flex: 0 0 auto;
+  width: 200px;
+  background: var(--surface);
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.card__title {
+  padding: 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.card__placeholder {
+  width: 100%;
+  padding-bottom: 100%; /* square grey box */
+  background: #eee;
+}

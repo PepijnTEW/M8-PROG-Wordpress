@@ -1,0 +1,17 @@
+#recept-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.recept-card {
+  background: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.recept-card:hover {
+  transform: scale(1.02);
+}
