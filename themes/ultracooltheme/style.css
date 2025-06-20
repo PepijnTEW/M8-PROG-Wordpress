@@ -5,13 +5,52 @@
  * Author:            Pepijn
  *
  */
-nav {
-  background: rgb(10, 4, 90);
-  color: white;
+:root {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#site-nav {
+  background: rgb(233, 233, 233);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  border-radius: 0 0 8px 8px;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
   padding: 15px;
 }
+#site-nav__menu {
+  display: flex;
+  gap: 8rem;
+}
+#nav-title {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+.nav-item {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+.link:hover {
+  text-decoration: underline;
+}
 footer {
-  background: rgb(10, 4, 90);
-  color: white;
+  background: rgb(233, 233, 233);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  border-radius: 8px 8px 0 0;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
   padding: 15px;
 }
